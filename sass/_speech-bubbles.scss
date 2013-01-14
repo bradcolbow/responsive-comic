@@ -1,0 +1,25 @@
+.speech-left {float: left;}
+.speech-right {float: right;}
+.speech-left-75 {width: 75%; float: left;}
+.speech-right-75 {width: 75%; float: right;}
+.speech-center-75 {width: 75%; margin: 4% 12.5% 0 12.5%;;}
+.speech-left-50 {width: 50%; float: left;}
+.speech-right-50 {width: 50%; float: right;}
+.speech-center-50 {width: 50%; margin: 4% 25% 0 25%;}
+.speech-left-30 {width: 30%; float: left;}
+.speech-right-30 {width: 30%; float: right;}
+.speech-center-30 {width: 30%; margin: 4% auto;}
+
+@mixin tail {background: url(../images/tail-1.png) no-repeat; height: 30px;}
+.tail-left {
+  @include tail; 
+  margin-left: 20%;
+  }
+.tail-right {
+  @include tail; 
+  margin-left: 70%;
+  }
+.tail-center {
+  @include tail; 
+  margin-left: 45%;
+  }

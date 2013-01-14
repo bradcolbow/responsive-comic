@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "_reset";
+@import "_grid";
+@import "_content";
+@import "_backgrounds";
+@import "_speech-bubbles";
+
+@font-face {
+  font-family: 'BradGothic-Regular';
+  src: url("../fonts/BradGothic-Regular.ttf");
+}
+    
+body {
+  background:#999;
+}
+
+.group:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+    
+body {}
+
+article { max-width: 900px; margin: 20px auto; padding:20px; background-color: #fff;}
+
+.elsewhere {
+  background-color: black;  
+  p {
+    color: white; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 12px;
+  }  
+}

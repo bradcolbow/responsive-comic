@@ -1,0 +1,24 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.8)
+    chunky_png (1.2.5)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    css_parser (1.2.6)
+      addressable
+      rdoc
+    fssm (0.2.9)
+    json (1.7.3)
+    rdoc (3.12)
+      json (~> 1.4)
+    sass (3.1.20)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass
+  css_parser

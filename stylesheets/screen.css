@@ -1,0 +1,425 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, ../sass/_grid.scss */
+.panels {
+  position: relative;
+  height: 100%;
+}
+/* line 7, ../sass/_grid.scss */
+.panels li {
+  position: relative;
+  float: left;
+  background: green;
+  margin-left: 2%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 15, ../sass/_grid.scss */
+.panels li img {
+  position: absolute;
+  margin: 18px 0 0 0;
+}
+
+/* line 22, ../sass/_grid.scss */
+.row {
+  margin-left: -2%;
+  margin-bottom: 2%;
+  position: relative;
+  clear: both;
+}
+/* line 28, ../sass/_grid.scss */
+.row.across-1 .panels li {
+  width: 98%;
+}
+/* line 29, ../sass/_grid.scss */
+.row.across-2 .panels li {
+  width: 48%;
+}
+/* line 31, ../sass/_grid.scss */
+.row.across-3 .panels li {
+  width: 31.333%;
+}
+/* line 34, ../sass/_grid.scss */
+.row.across-3 .panels li.span-2 {
+  width: 64.667%;
+}
+@media screen and (max-width: 600px) {
+  /* line 31, ../sass/_grid.scss */
+  .row.across-3 .panels li {
+    width: 48%;
+  }
+}
+/* line 40, ../sass/_grid.scss */
+.row.across-4 .panels li {
+  width: 23%;
+}
+/* line 42, ../sass/_grid.scss */
+.row.across-4 .panels li.span-2 {
+  width: 48%;
+}
+/* line 43, ../sass/_grid.scss */
+.row.across-4 .panels li.span-3 {
+  width: 73%;
+}
+/* line 47, ../sass/_grid.scss */
+.row.h050 {
+  height: 50px;
+}
+/* line 48, ../sass/_grid.scss */
+.row.h100 {
+  height: 100px;
+}
+/* line 49, ../sass/_grid.scss */
+.row.h150 {
+  height: 150px;
+}
+/* line 50, ../sass/_grid.scss */
+.row.h200 {
+  height: 200px;
+}
+/* line 51, ../sass/_grid.scss */
+.row.h250 {
+  height: 250px;
+}
+/* line 52, ../sass/_grid.scss */
+.row.h300 {
+  height: 300px;
+}
+/* line 53, ../sass/_grid.scss */
+.row.h350 {
+  height: 350px;
+}
+/* line 54, ../sass/_grid.scss */
+.row.h400 {
+  height: 400px;
+}
+/* line 55, ../sass/_grid.scss */
+.row.h450 {
+  height: 450px;
+}
+/* line 56, ../sass/_grid.scss */
+.row.h500 {
+  height: 500px;
+}
+/* line 57, ../sass/_grid.scss */
+.row.h550 {
+  height: 550px;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 62, ../sass/_grid.scss */
+  .row.across-2 .panels li {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+  /* line 67, ../sass/_grid.scss */
+  .row.across-3 .panels li {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+  /* line 71, ../sass/_grid.scss */
+  .row.across-3 .panels li:nth-child(3) {
+    width: 98%;
+  }
+  /* line 76, ../sass/_grid.scss */
+  .row.across-4 .panels li {
+    width: 48%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 84, ../sass/_grid.scss */
+  .row.across-2 .panels li {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+  /* line 89, ../sass/_grid.scss */
+  .row.across-3 .panels li {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+  /* line 93, ../sass/_grid.scss */
+  .row.across-3 .panels li:nth-child(3) {
+    width: 98%;
+  }
+  /* line 98, ../sass/_grid.scss */
+  .row.across-4 .panels li {
+    width: 98%;
+    margin-bottom: 2%;
+  }
+}
+/* line 1, ../sass/_content.scss */
+p {
+  font-family: 'BradGothic-Regular';
+}
+
+/* line 5, ../sass/_content.scss */
+.speech {
+  text-transform: uppercase;
+  padding: 4%;
+  margin: 4% 4% 0 4%;
+  background-color: #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 16, ../sass/_content.scss */
+.yelling {
+  font-size: 24px;
+}
+
+/* line 19, ../sass/_content.scss */
+.action {
+  font-family: 'helvetica', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 4px;
+  border-top: 1px solid #333;
+  background: #ffc;
+}
+
+/* line 1, ../sass/_backgrounds.scss */
+.panels .panel-1 {
+  background: url(../images/panel-1.jpg) top center;
+}
+
+/* line 4, ../sass/_backgrounds.scss */
+.panels .panel-2 {
+  background: url(../images/panel-2.jpg) top center;
+}
+
+/* line 7, ../sass/_backgrounds.scss */
+.panels .panel-3 {
+  background: url(../images/panel-3.jpg) top center;
+}
+
+/* line 10, ../sass/_backgrounds.scss */
+.panels .panel-4 {
+  background: url(../images/panel-4.jpg) top center;
+}
+
+/* line 13, ../sass/_backgrounds.scss */
+.panels .panel-5 {
+  background: url(../images/panel-5.jpg) top center;
+}
+
+/* line 16, ../sass/_backgrounds.scss */
+.panels .panel-6 {
+  background: url(../images/panel-6.jpg) top center;
+}
+
+/* line 19, ../sass/_backgrounds.scss */
+.panels .panel-7 {
+  background: url(../images/panel-7.jpg) top center;
+}
+
+/* line 22, ../sass/_backgrounds.scss */
+.panels .panel-8 {
+  background: url(../images/panel-8.jpg) top center;
+}
+
+/* line 25, ../sass/_backgrounds.scss */
+.panels .panel-9 {
+  background: url(../images/panel-9.jpg) top center;
+}
+
+/* line 28, ../sass/_backgrounds.scss */
+.panels .panel-10 {
+  background: url(../images/panel-10.jpg) top center;
+}
+
+/* line 1, ../sass/_speech-bubbles.scss */
+.speech-left {
+  float: left;
+}
+
+/* line 2, ../sass/_speech-bubbles.scss */
+.speech-right {
+  float: right;
+}
+
+/* line 3, ../sass/_speech-bubbles.scss */
+.speech-left-75 {
+  width: 75%;
+  float: left;
+}
+
+/* line 4, ../sass/_speech-bubbles.scss */
+.speech-right-75 {
+  width: 75%;
+  float: right;
+}
+
+/* line 5, ../sass/_speech-bubbles.scss */
+.speech-center-75 {
+  width: 75%;
+  margin: 4% 12.5% 0 12.5%;
+}
+
+/* line 6, ../sass/_speech-bubbles.scss */
+.speech-left-50 {
+  width: 50%;
+  float: left;
+}
+
+/* line 7, ../sass/_speech-bubbles.scss */
+.speech-right-50 {
+  width: 50%;
+  float: right;
+}
+
+/* line 8, ../sass/_speech-bubbles.scss */
+.speech-center-50 {
+  width: 50%;
+  margin: 4% 25% 0 25%;
+}
+
+/* line 9, ../sass/_speech-bubbles.scss */
+.speech-left-30 {
+  width: 30%;
+  float: left;
+}
+
+/* line 10, ../sass/_speech-bubbles.scss */
+.speech-right-30 {
+  width: 30%;
+  float: right;
+}
+
+/* line 11, ../sass/_speech-bubbles.scss */
+.speech-center-30 {
+  width: 30%;
+  margin: 4% auto;
+}
+
+/* line 14, ../sass/_speech-bubbles.scss */
+.tail-left {
+  background: url(../images/tail-1.png) no-repeat;
+  height: 30px;
+  margin-left: 20%;
+}
+
+/* line 18, ../sass/_speech-bubbles.scss */
+.tail-right {
+  background: url(../images/tail-1.png) no-repeat;
+  height: 30px;
+  margin-left: 70%;
+}
+
+/* line 22, ../sass/_speech-bubbles.scss */
+.tail-center {
+  background: url(../images/tail-1.png) no-repeat;
+  height: 30px;
+  margin-left: 45%;
+}
+
+@font-face {
+  font-family: 'BradGothic-Regular';
+  src: url("../fonts/BradGothic-Regular.ttf");
+}
+
+/* line 17, ../sass/screen.scss */
+body {
+  background: #999;
+}
+
+/* line 21, ../sass/screen.scss */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 31, ../sass/screen.scss */
+article {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* line 33, ../sass/screen.scss */
+.elsewhere {
+  background-color: black;
+}
+/* line 35, ../sass/screen.scss */
+.elsewhere p {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 12px;
+}

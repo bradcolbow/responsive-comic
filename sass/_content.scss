@@ -1,0 +1,31 @@
+p {
+  font-family:'BradGothic-Regular';
+}
+
+.speech {
+  text-transform: uppercase;
+  padding: 4%;
+  margin: 4% 4% 0 4%;
+  background-color: #fff;
+  border-radius: 22px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+.yelling {
+  font-size: 24px;  
+}
+.action {
+  font-family:'helvetica', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-size:0.8em;
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:4px;
+  border-top:1px solid #333;
+  background:#ffc;
+}
